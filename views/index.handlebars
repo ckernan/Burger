@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="jumbotron text-center bg-info text-white">
+        <h1 class="display-4" id="logo">Good Burger<img src="/assets/images/cheeseburger.png"></h1>
+        <p class="caption">Welcome to Good Burger, Home of the Good Burger...</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card border-warning">
+                <div class="card-header bg-warning text-white">
+                    Can I take your order?
+                </div>
+                <div class="card-body">
+                    <form class="create-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="burger-order" placeholder="Order Here">
+                        </div>
+                        <button class="btn btn-warning" type="submit">Place order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row mt-4">
+        <div class="col-md-6 mt-2">
+            <div class="card border-info" id='burger-card'>
+                <div class="card-header bg-info text-white">
+                    Burgers
+                </div>
+                <div class="card-body">
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    {{> burgers/burger-block devour=false}}
+                    {{/unless}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mt-2">
+            <div class="card devoured-card">
+                <div class="card-header text-white" id="devoured-card-header">
+                    Devoured burgers
+                </div>
+                <div class="card-body">
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    {{> burgers/burger-devour devour=true}}
+                    {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>

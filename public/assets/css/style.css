@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
+body {
+    font-family: 'Luckiest Guy', cursive;
+    background-image: url("/assets/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    font-size: 90px;
+}
+
+.caption {
+    font-size: 30px;
+}
+
+#devoured-card-header  {
+    background-color: #ca341f;
+}
+
+.delete-burger {
+    background-color: #ca341f;
+}
+
+.devoured-burger-name {
+    color: #ca341f;
+}
+
+.devoured-card {
+    border-color: #ca341f;
+}
+
+.card-header {
+    font-size: 20px;
+}
+
+#burger-card {
+    margin-bottom: 100px;
+}
+
+.btn {
+    font-size: 17px;
+}
+
+.jumbotron {
+    padding: 10px;
+}
+
