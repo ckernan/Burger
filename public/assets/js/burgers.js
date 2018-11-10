@@ -1,12 +1,7 @@
-// Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-    //Click event for adding a burger.
     $(".create-form").on("submit", function(event) {
-        // Make sure to preventDefault on a submit event.
         event.preventDefault();
 
-        //Grab burger name from form field.
-        //When user submits burger name, set devoured state to false.
         var newBurger = {
         burger_name: $("#burger-order").val().trim(),
         devoured: 0
@@ -25,7 +20,7 @@ $(function() {
         );
     });
 
-    //Click event to throw away/delete burger.
+    //Click event to delete burger.
     $(".delete-burger").on("click", function(event) {
         var id = $(this).data("id");
     
@@ -41,7 +36,7 @@ $(function() {
         );
       });
 
-    //Click event for "Devour me" button.
+    //Click event for "Devour it" button.
     $(".change-devour").on("click", function(event) {
         var id = $(this).data("id");
         var newDevour = $(this).data("newdevour");
