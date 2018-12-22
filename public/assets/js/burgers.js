@@ -10,12 +10,15 @@ $(function() {
         // Send the POST request using ajax.
         $.ajax("/api/burgers", {
         type: "POST",
-        data: newBurger
+        data: newBurger,
+        success: function() {
+          location.reload();
+        }
         }).then(
         function() {
             console.log("created new burger");
             // Reload the page to get the updated list
-            location.reload();
+            // location.reload();
         }
         );
     });
@@ -27,11 +30,14 @@ $(function() {
         // Send the DELETE request using ajax.
         $.ajax("/api/burgers/" + id, {
           type: "DELETE",
+          success: function() {
+            location.reload();
+          }
         }).then(
           function() {
             console.log("deleted burger", id);
             // Reload the page to get the updated list
-            location.reload();
+            // location.reload();
           }
         );
       });
@@ -48,12 +54,15 @@ $(function() {
         // Send the PUT request using ajax.
         $.ajax("/api/burgers/" + id, {
           type: "PUT",
-          data: newDevourState
+          data: newDevourState,
+          success: function() {
+            location.reload();
+          }
         }).then(
           function() {
             console.log("changed devour to", newDevour);
             // Reload the page to get the updated list
-            location.reload();
+            // location.reload();
           }
         );
       });   

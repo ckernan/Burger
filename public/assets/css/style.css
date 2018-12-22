@@ -4,6 +4,7 @@ body {
     font-family: 'Luckiest Guy', cursive;
     background-image: url("/assets/images/goodburger.jpeg");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
