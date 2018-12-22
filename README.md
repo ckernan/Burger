@@ -1,4 +1,4 @@
-# Burger
+# Good Burger
 
 Restaurant app that lets users input the names of burgers they'd like to eat. 
 
@@ -10,8 +10,8 @@ The app stores every burger in a database, whether devoured or not.
 
 Made with MySQL, Node, Express, Handlebars and ORM. Follows the MVC design pattern; Uses Node and MySQL to query and route data, and Handlebars to generate HTML.
 
-## Home Page
-![app image](https://github.com/ckernan/Burger/blob/master/public/assets/images/Homepage.png?raw=true)
+## Preview
+![Good Burger gif](/public/assets/images/GoodBurgerDEMO.gif)
 
 This app has been deployed through Heroku. Access it [here](https://good-burger-app.herokuapp.com/).
 
